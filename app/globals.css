@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  /* Background colors */
+  --background: #ffffff;
+  --foreground: #212121;
+  
+  /* Primary color (orange-red) */
+  --primary: #ff5722;
+  
+  /* Secondary color (orange-yellow) */
+  --secondary: #F68B21;
+  
+  /* Text colors */
+  --text-primary: #212121;
+  --text-white: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Primary color for Tailwind */
+  --color-primary: var(--primary);
+  
+  /* Secondary color for Tailwind */
+  --color-secondary: var(--secondary);
+  
+  /* Text colors for Tailwind */
+  --color-text-primary: var(--text-primary);
+  --color-text-white: var(--text-white);
+  
+  /* Fonts */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
