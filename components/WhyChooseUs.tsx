@@ -1,0 +1,157 @@
+"use client";
+import Box from "@mui/material/Box";
+import Image from "next/image";
+import { colors } from "@/lib/colors";
+
+export default function WhyChooseUs() {
+  return (
+    <Box className="w-full bg-white py-12 lg:py-16">
+      <Box className="max-w-7xl mx-auto px-6 lg:px-8 xl:px-0">
+        <Box className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-center">
+          {/* Left Section - Image */}
+          <Box className="flex-1 relative">
+            <Box className="relative rounded-2xl overflow-hidden">
+              <Image
+                src="/homepage1.png"
+                alt="Professional cleaning service"
+                width={500}
+                height={400}
+                className="w-full h-auto max-h-[400px] rounded-2xl object-cover"
+              />
+              {/* 100% Satisfaction Badge */}
+              <Box
+                className="absolute bottom-4 right-4 w-36 h-36 rounded-full flex flex-col items-center justify-center shadow-2xl z-10"
+                style={{ backgroundColor: colors.primary }}
+              >
+                <span className="text-white text-3xl font-extrabold leading-none mb-1">100%</span>
+                <span className="text-white text-[10px] font-bold uppercase text-center px-2 leading-tight">
+                  SATISFACTION<br/>GUARANTEED
+                </span>
+              </Box>
+            </Box>
+          </Box>
+
+          {/* Right Section - Content */}
+          <Box className="flex-1">
+            <h2
+              className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-6 leading-tight"
+              style={{ color: colors.primary }}
+            >
+              Why Homeowners Choose Simsan Fraser Maintenance
+            </h2>
+
+            {/* Bullet Points */}
+            <Box className="space-y-4 mb-6">
+              {/* Point 1 - Wrench & Screwdriver */}
+              <Box className="flex items-start gap-4">
+                <Box
+                  className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: `${colors.primary}15` }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={colors.primary} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 1 0 1.4l-1.6 1.6a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 1 0 1.4l-1.6 1.6a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 1 0 1.4l-1.6 1.6a1 1 0 0 0-.7.3H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10.3a1 1 0 0 0 .7.3z" />
+                    <path d="M8 6h6M8 12h6M8 18h6" />
+                  </svg>
+                </Box>
+                <p className="text-sm md:text-base" style={{ color: colors.text.primary }}>
+                  <strong style={{ color: colors.primary }}>Local Fraser Valley experts</strong>
+                </p>
+              </Box>
+
+              {/* Point 2 - Thumbs Up */}
+              <Box className="flex items-start gap-3">
+                <Box
+                  className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: `${colors.primary}15` }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={colors.primary} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M7 13V8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5M7 13l-3 3v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2l-3-3M7 13h10" />
+                    <path d="M9 9V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3" />
+                  </svg>
+                </Box>
+                <p className="text-sm md:text-base" style={{ color: colors.text.primary }}>
+                  <strong style={{ color: colors.primary }}>High quality results with attention to detail</strong>
+                </p>
+              </Box>
+
+              {/* Point 3 */}
+              <Box className="flex items-start gap-3">
+                <Box
+                  className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: `${colors.primary}15` }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={colors.primary} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </Box>
+                <p className="text-sm md:text-base" style={{ color: colors.text.primary }}>
+                  <strong style={{ color: colors.primary }}>Safe, effective cleaning methods</strong>
+                </p>
+              </Box>
+
+              {/* Point 4 */}
+              <Box className="flex items-start gap-3">
+                <Box
+                  className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: `${colors.primary}15` }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={colors.primary} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="12" y1="1" x2="12" y2="23" />
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                  </svg>
+                </Box>
+                <p className="text-sm md:text-base" style={{ color: colors.text.primary }}>
+                  <strong style={{ color: colors.primary }}>Competitive pricing with no hidden fees</strong>
+                </p>
+              </Box>
+
+              {/* Point 5 */}
+              <Box className="flex items-start gap-3">
+                <Box
+                  className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: `${colors.primary}15` }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={colors.primary} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 3h18v18H3zM9 9h6v6H9z" />
+                    <path d="M21 9l-9 9M9 21l-9-9" />
+                  </svg>
+                </Box>
+                <p className="text-sm md:text-base" style={{ color: colors.text.primary }}>
+                  <strong style={{ color: colors.primary }}>Reliable, friendly service from start to finish</strong>
+                </p>
+              </Box>
+            </Box>
+
+            {/* Descriptive Paragraph */}
+            <p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: colors.text.primary }}>
+              Whether you need roof moss removal, gutter cleaning, soft washing, pressure washing, driveway sealing, or professional painting, Simsan Fraser Maintenance is committed to excellent service and outstanding results every time.
+            </p>
+
+            {/* CTA Buttons */}
+            <Box className="flex flex-col sm:flex-row gap-3">
+              <button
+                className="px-6 py-3 rounded-lg text-sm font-semibold text-white flex items-center justify-center gap-2 transition-colors duration-200 uppercase tracking-wide"
+                style={{ backgroundColor: colors.primary }}
+              >
+                CALL US NOW
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+              <button
+                className="px-6 py-3 rounded-lg text-sm font-semibold text-white flex items-center justify-center gap-2 transition-colors duration-200 uppercase tracking-wide"
+                style={{ backgroundColor: colors.primary }}
+              >
+                GET QUOTE
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  );
+}
+

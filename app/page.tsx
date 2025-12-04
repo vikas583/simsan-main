@@ -3,6 +3,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { colors } from "@/lib/colors";
 import ZipCodeCta from "@/components/ZipCodeCta";
+import Image from "next/image";
+import OurServices from "@/components/OurServices";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import ContactUs from "@/components/ContactUs";
+import CustomerReviews from "@/components/CustomerReviews";
+import OurWorkCarousel from "@/components/OurWorkCarousel";
 
 export default function Home() {
   return (
@@ -46,8 +52,79 @@ export default function Home() {
         <ZipCodeCta />
       </Box>
 
-      {/* Next section is just white bg for demonstration - remove if not needed */}
-      <Box className="flex-1 bg-white min-h-[200px]" />
+      {/* About Section */}
+      <Box className="flex-1 bg-white">
+        <Box className="max-w-6xl mx-auto px-6 lg:px-8 xl:px-0 py-20 lg:py-24 flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
+          {/* Left Content */}
+          <Box className="flex-1 max-w-xl">
+            <p className="text-sm md:text-base font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: colors.primary }}>
+              About Us
+            </p>
+            <h2 className="text-xl md:text-xl lg:text-xl font-extrabold leading-snug mb-4" style={{ color: colors.secondary }}>
+              Professional Window, Gutter, & Roof Cleaning
+            </h2>
+            <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-4">
+              We are your trusted cleaning and maintenance experts, offering complete solutions to keep your
+              home and property looking its best. From Roof &amp; Gutter Cleaning to Window Washing, we
+              ensure every corner shines with perfection.
+            </p>
+            <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-4">
+              Our Pressure Cleaning service restores surfaces to their original beauty removing dirt, grime,
+              and stains with precision and care.
+            </p>
+            <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
+              We also bring festive joy to your home with professional Christmas Lighting &amp; Decoration,
+              creating beautiful, safe, and eye catching displays for the holiday season.
+            </p>
+            <button
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-sm md:text-base font-semibold text-white shadow-lg transition-colors duration-200"
+              style={{ backgroundColor: colors.primary }}
+            >
+              LEARN MORE
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </Box>
+
+          {/* Right Images - Side by Side */}
+          <Box className="flex-1 flex flex-row gap-6 justify-center items-start">
+            <Box className="flex-1 max-w-[280px] lg:max-w-[320px]">
+              <Image
+                src="/home-about-img1.png"
+                alt="Roof cleaning service"
+                width={320}
+                height={400}
+                className="w-full h-auto rounded-2xl object-cover shadow-lg"
+              />
+            </Box>
+            <Box className="flex-1 max-w-[280px] lg:max-w-[320px] mt-12 lg:mt-[120px]">
+              <Image
+                src="/home-about-imp2.png"
+                alt="Gutter cleaning service"
+                width={320}
+                height={400}
+                className="w-full h-auto rounded-2xl object-cover shadow-lg"
+              />
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+
+      {/* Our Services Section */}
+      <OurServices />
+
+      {/* Why Choose Us Section */}
+      <WhyChooseUs />
+
+      {/* Our Work Carousel Section */}
+      <OurWorkCarousel />
+
+      {/* Contact Us Section */}
+      <ContactUs />
+
+      {/* Customer Reviews Section */}
+      <CustomerReviews />
 
       <Footer />
     </Box>

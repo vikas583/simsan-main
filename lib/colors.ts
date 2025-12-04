@@ -18,5 +18,7 @@ export const colors = {
   background: {
     white: "#ffffff",
   },
+  // Review card background color (orange, 7% opacity for highlight)
+  reviewCard: 'rgba(241, 89, 42, 0.07)', // #F1592A at 7% opacity
 } as const;
 

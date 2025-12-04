@@ -1,0 +1,88 @@
+"use client";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
+import { colors } from "@/lib/colors";
+import React, { useState } from "react";
+
+const images = [
+  {
+    src: "/home-about-img1.png",
+    alt: "Professional cleaning - image 1"
+  },
+  {
+    src: "/home-about-imp2.png",
+    alt: "Professional cleaning - image 2"
+  },
+  {
+    src: "/homepage1.png",
+    alt: "Professional cleaning - image 3"
+  }
+];
+
+export default function OurWorkCarousel() {
+  const [idx, setIdx] = useState(0);
+
+  return (
+    <Box className="w-full flex flex-col items-center justify-center py-10 md:py-16 px-2 select-none">
+      <Typography
+        variant="h4"
+        className="font-extrabold text-center mb-6 text-[2rem]"
+        style={{ color: colors.primary }}
+      >
+        Our Work
+      </Typography>
+      <Box className="flex items-center justify-center w-full max-w-4xl mx-auto relative" style={{ minHeight: 370 }}>
+        {/* Left Arrow */}
+        <IconButton
+          onClick={() => setIdx(v => (v - 1 + images.length) % images.length)}
+          aria-label="Previous"
+          sx={{
+            background: colors.reviewCard,
+            color: colors.primary,
+            width: 64,
+            height: 64,
+            position: 'absolute',
+            left: -56,
+            top: "50%",
+            transform: "translateY(-50%)",
+            zIndex: 4,
+            '&:hover': { background: colors.primary, color: 'white' }
+          }}
+        >
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </IconButton>
+        {/* Photo Box */}
+        <Box className="relative flex-1 flex justify-center items-center w-full max-w-2xl rounded-t-lg overflow-hidden">
+          <img
+            key={images[idx].src}
+            src={images[idx].src}
+            alt={images[idx].alt}
+            className="block rounded-lg object-cover w-full h-[355px]"
+            style={{ boxShadow: "0 4px 32px 0 rgba(20,20,20,0.08)" }}
+            draggable={false}
+          />
+        </Box>
+        {/* Right Arrow */}
+        <IconButton
+          onClick={() => setIdx(v => (v + 1) % images.length)}
+          aria-label="Next"
+          sx={{
+            background: colors.reviewCard,
+            color: colors.primary,
+            width: 64,
+            height: 64,
+            position: 'absolute',
+            right: -56,
+            top: "50%",
+            transform: "translateY(-50%)",
+            zIndex: 4,
+            '&:hover': { background: colors.primary, color: 'white' }
+          }}
+        >
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+        </IconButton>
+      </Box>
+    </Box>
+  );
+}
