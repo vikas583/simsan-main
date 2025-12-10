@@ -4,56 +4,46 @@ import ServiceCard from "./ServiceCard";
 import WindowWashingIcon from "@/public/icons/tsx/WindowWashingIcon";
 import PressureCleaningIcon from "@/public/icons/tsx/PressureCleaningIcon";
 import ChristmasDecorationIcon from "@/public/icons/tsx/ChristmasDecorationIcon";
+import { colors } from "@/lib/colors";
+import { SERVICES } from "@/constants/services";
 
-const services = [
-    {
-        icon: <RoofGutterIcon className="w-full h-full" />,
-        title: "Roof & Gutter Cleaning",
-        description:
-            "Clogged gutters can cause water to back up into your roof, walls, and foundation. Our professional cleaning removes leaves, needles, and debris to keep your drainage system flowing properly and prevent structural damage.",
-    },
-    {
-        icon: <WindowWashingIcon className="w-full h-full" />,
-        title: "Window Washing",
-        description:
-            "Crystal clear windows enhance your property's appearance and let in more natural light. Our professional window cleaning service removes dirt, grime, and streaks for spotless results every time.",
-    },
-    {
-        icon: <PressureCleaningIcon className="w-full h-full" />,
-        title: "Pressure Cleaning",
-        description:
-            "Restore your property's exterior surfaces to like-new condition. Our pressure cleaning service effectively removes mold, mildew, dirt, and stains from driveways, walkways, decks, and siding.",
-    },
-    {
-        icon: <ChristmasDecorationIcon className="w-full h-full" />,
-        title: "Christmas & Lighting Decoration",
-        description:
-            "Transform your property into a winter wonderland with our professional holiday lighting installation. We handle design, installation, maintenance, and removal for a hassle-free festive season.",
-    },
-];
+const serviceIcons: Record<string, React.ReactNode> = {
+    "roof-gutter-cleaning": <RoofGutterIcon className="w-full h-full" />,
+    "window-washing": <WindowWashingIcon className="w-full h-full" />,
+    "pressure-cleaning": <PressureCleaningIcon className="w-full h-full" />,
+    "christmas-lighting-decoration": <ChristmasDecorationIcon className="w-full h-full" />,
+};
 
 const ServicesSection = () => {
     return (
-        <section className="py-16 md:py-24 bg-background">
-            <div className="container max-w-4xl mx-auto px-4 sm:px-6">
-                <div className="mb-10 md:mb-14">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-service-heading mb-4">
+        <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                {/* Header Section - Centered on Mobile/Tablet, Left on Desktop */}
+                <div className="mb-10 sm:mb-12 md:mb-16 text-center lg:text-left">
+                    <h2 
+                        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-5"
+                        style={{ color: colors.primary }}
+                    >
                         Our Professional Services
                     </h2>
-                    <p className="text-muted-foreground text-base md:text-lg max-w-xl">
+                    <p 
+                        className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 leading-relaxed"
+                        style={{ color: '#666666' }}
+                    >
                         We deliver a full range of property maintenance solutions, all
                         optimized for long-lasting results:
                     </p>
                 </div>
 
-                <div className="divide-y divide-border">
-                    {services.map((service, index) => (
+                {/* Services List */}
+                <div className="space-y-0">
+                    {SERVICES.map((service) => (
                         <ServiceCard
-                            key={index}
-                            icon={service.icon}
+                            key={service.slug}
+                            icon={serviceIcons[service.slug] || <RoofGutterIcon className="w-full h-full" />}
                             title={service.title}
                             description={service.description}
-                            onLearnMore={() => console.log(`Learn more about ${service.title}`)}
+                            slug={service.slug}
                         />
                     ))}
                 </div>

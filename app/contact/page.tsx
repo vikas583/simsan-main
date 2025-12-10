@@ -1,97 +1,56 @@
-"use client";
-
-import { useState } from "react";
-import Container from "@mui/material/Container";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactUs from "@/components/ContactUs";
+import HeroBanner from "@/components/HeroBanner";
+import Box from "@mui/material/Box";
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Handle form submission here
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  const breadcrumbs = [
+    { label: "Home", href: "/" },
+    { label: "Contact Us" },
+  ];
 
   return (
-    <Box className="flex min-h-screen flex-col bg-gray-50 dark:bg-gray-900">
+    <>
       <Header />
-      <Container maxWidth="md" className="flex-1 py-12">
-        <Box className="max-w-2xl mx-auto">
-          <Typography
-            variant="h3"
-            component="h1"
-            className="mb-6 font-bold text-gray-900 dark:text-white text-center"
-          >
-            Contact Us
-          </Typography>
-          <Box
-            component="form"
-            onSubmit={handleSubmit}
-            className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md"
-          >
-            <Stack spacing={3}>
-              <TextField
-                label="Name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                fullWidth
-                variant="outlined"
+      <main className="min-h-screen bg-background">
+        {/* Hero Section */}
+        <HeroBanner
+          title="Get In Touch With us"
+          breadcrumbs={breadcrumbs}
+          backgroundImage="/home-about-imp2.png"
+          minHeight="260px"
+        />
+
+        {/* Contact Us Section */}
+        <ContactUs />
+
+        {/* Google Map Section */}
+        <Box className="w-full bg-white py-8 md:py-12">
+          <Box className="max-w-7xl mx-auto px-6 lg:px-8 xl:px-0">
+            <Box
+              className="w-full rounded-lg overflow-hidden shadow-lg"
+              sx={{
+                height: { xs: "400px", sm: "500px", md: "600px", lg: "700px" },
+                position: "relative",
+              }}
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83327.225609682!2d-123.224926!3d49.2604404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143a94fb3%3A0xbb9196ea9b81f38b!2sVancouver%2C%20BC%2C%20Canada!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Service Area Map - Vancouver, BC"
               />
-              <TextField
-                label="Email"
-                name="email"
-                type="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                fullWidth
-                variant="outlined"
-              />
-              <TextField
-                label="Message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                fullWidth
-                multiline
-                rows={6}
-                variant="outlined"
-              />
-              <Button
-                type="submit"
-                variant="contained"
-                size="large"
-                className="mt-4"
-              >
-                Send Message
-              </Button>
-            </Stack>
+            </Box>
           </Box>
         </Box>
-      </Container>
+      </main>
       <Footer />
-    </Box>
+    </>
   );
 }
 

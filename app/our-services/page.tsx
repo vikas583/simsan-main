@@ -1,7 +1,9 @@
-import HeroBanner from "./HeroBanner";
+import HeroBanner from "@/components/HeroBanner";
 import ServiceSection from "./ServiceSection";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ZipCodeCta from "@/components/ZipCodeCta";
+import Box from "@mui/material/Box";
 
 const Index = () => {
     const breadcrumbs = [
@@ -16,9 +18,12 @@ const Index = () => {
                 <HeroBanner
                     title="Our Services"
                     breadcrumbs={breadcrumbs}
+                    backgroundImage="/homepage1.png"
+                    minHeight="260px"
                 />
-                {/* Page Content Placeholder */}
+                {/* Services Section */}
                 <ServiceSection />
+
             </main>
             <Footer />
         </>

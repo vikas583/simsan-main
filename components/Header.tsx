@@ -123,14 +123,14 @@ export default function Header() {
       {/* Main Header */}
       <AppBar position="static" elevation={0} className="bg-white" sx={{ backgroundColor: "white" }}>
         <Toolbar className="justify-between px-3 md:px-8 py-1 min-h-0 md:min-h-[56px]">
-          {/* Hamburger for Mobile */}
-          <Box className="flex items-center md:hidden">
+          {/* Hamburger for Mobile and Tablet */}
+          <Box className="flex items-center lg:hidden">
             <IconButton aria-label="open menu" edge="start" onClick={handleDrawerToggle}>
               <HamburgerIcon />
             </IconButton>
           </Box>
-          {/* Logo */}
-          <Link href="/" className="no-underline flex-1 flex md:flex-none md:justify-start justify-center">
+          {/* Logo - Centered on Mobile/Tablet, Left on Desktop */}
+          <Link href="/" className="no-underline flex-1 flex lg:flex-none lg:justify-start justify-center">
             <Box className="flex items-center">
               <Image
                 src="/icons/logo.svg"
@@ -143,7 +143,7 @@ export default function Header() {
             </Box>
           </Link>
           {/* Desktop Navigation */}
-          <Box className="hidden md:flex gap-1 items-center flex-1 justify-center">
+          <Box className="hidden lg:flex gap-1 items-center flex-1 justify-center">
             {navItems.map((item) => (
               <Link key={item.path} href={item.path} className="no-underline">
                 <Button
@@ -164,7 +164,7 @@ export default function Header() {
             ))}
           </Box>
           {/* CTA Button on desktop */}
-          <Box className="hidden md:flex items-center flex-1 justify-end">
+          <Box className="hidden lg:flex items-center flex-1 justify-end">
             <Button
               variant="contained"
               sx={{

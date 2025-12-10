@@ -6,6 +6,7 @@ import { colors } from "@/lib/colors";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroBanner from "@/components/HeroBanner";
 
 export default function AboutUsPage() {
     const TechniciansIcon = () => (
@@ -186,37 +187,21 @@ export default function AboutUsPage() {
         </div>
     );
 
+    const breadcrumbs = [
+        { label: "Home", href: "/" },
+        { label: "About Us" },
+    ];
+
     return (
         <Box className="w-full min-h-screen bg-[#fbfbfb] flex flex-col">
             <Header />
             {/* Hero Banner */}
-            <Box
-                className="w-full relative h-[190px] md:h-[220px] lg:h-[240px] flex justify-center items-center"
-                style={{ overflow: 'hidden', borderBottomLeftRadius: 44, borderBottomRightRadius: 44 }}
-            >
-                {/* Bg img and overlay */}
-                <img
-                    src="/homepage1.png"
-                    alt="Gutter Hero"
-                    className="w-full h-full object-cover absolute top-0 left-0 z-0"
-                    style={{ opacity: 0.55, filter: 'brightness(0.4)' }}
-                />
-                {/* Overlay content */}
-                <Box className="relative z-10 w-full flex flex-col items-start px-8 lg:px-16 xl:px-32">
-                    <Typography
-                        variant="h2"
-                        className="text-white font-extrabold mb-2 mt-6 text-[2.6rem] md:text-[3.1rem]"
-                        sx={{ textShadow: "0 8px 20px rgba(30,30,30,0.19)" }}
-                    >
-                        About Us
-                    </Typography>
-                    <Box className="flex gap-2 text-base font-medium">
-                        <Link href="/" className="text-[1.02rem]" style={{ color: colors.primary }}>Home</Link>
-                        <span className="text-white">-</span>
-                        <span className="text-white" style={{ opacity: 0.88 }}>About Us</span>
-                    </Box>
-                </Box>
-            </Box>
+            <HeroBanner
+                title="About Us"
+                breadcrumbs={breadcrumbs}
+                backgroundImage="/homepage1.png"
+                minHeight="240px"
+            />
 
             {/* Main content card */}
             <section className="py-16 px-4 md:px-8 lg:px-16 bg-card">

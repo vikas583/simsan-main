@@ -54,9 +54,9 @@ export default function Home() {
 
       {/* About Section */}
       <Box className="flex-1 bg-white">
-        <Box className="max-w-6xl mx-auto px-6 lg:px-8 xl:px-0 py-20 lg:py-24 flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
+        <Box className="max-w-6xl mx-auto px-0 sm:px-6 lg:px-8 xl:px-0 py-20 lg:py-24 flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
           {/* Left Content */}
-          <Box className="flex-1 max-w-xl">
+          <Box className="flex-1 max-w-xl px-6 sm:px-0">
             <p className="text-sm md:text-base font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: colors.primary }}>
               About Us
             </p>
@@ -87,9 +87,9 @@ export default function Home() {
             </button>
           </Box>
 
-          {/* Right Images - Side by Side */}
-          <Box className="flex-1 flex flex-row gap-6 justify-center items-start">
-            <Box className="flex-1 max-w-[280px] lg:max-w-[320px]">
+          {/* Right Images - Full width on mobile, side by side on desktop */}
+          <Box className="w-full lg:flex-1 flex flex-col sm:flex-row gap-6 justify-center items-center sm:items-start px-6 sm:px-0">
+            <Box className="w-full sm:flex-1">
               <Image
                 src="/home-about-img1.png"
                 alt="Roof cleaning service"
@@ -98,7 +98,7 @@ export default function Home() {
                 className="w-full h-auto rounded-2xl object-cover shadow-lg"
               />
             </Box>
-            <Box className="flex-1 max-w-[280px] lg:max-w-[320px] mt-12 lg:mt-[120px]">
+            <Box className="w-full sm:flex-1 max-w-none sm:max-w-[280px] lg:max-w-[320px] mt-0 sm:mt-12 lg:mt-[120px]">
               <Image
                 src="/home-about-imp2.png"
                 alt="Gutter cleaning service"

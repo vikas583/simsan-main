@@ -21,7 +21,7 @@ export const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "var(--font-geist-sans), Arial, Helvetica, sans-serif",
+    fontFamily: "var(--font-poppins), 'Poppins', sans-serif",
   },
   components: {
     MuiButton: {

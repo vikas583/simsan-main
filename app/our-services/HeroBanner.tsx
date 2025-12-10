@@ -27,21 +27,21 @@ const HeroBanner = ({ title, breadcrumbs }: HeroBannerProps) => {
                 {/* Content */}
                 <div className="relative z-10 flex h-full flex-col justify-center px-6 sm:px-8 md:px-12 lg:px-16">
                     <div className="container mx-auto max-w-7xl">
-                        {/* Title */}
+                        {/* Title - Centered on Mobile/Tablet, Left on Desktop */}
                         <h1
-                            className="mb-3 text-3xl font-bold text-primary-foreground sm:text-4xl md:text-5xl lg:text-6xl animate-fade-in-up"
+                            className="mb-3 text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl animate-fade-in-up text-center lg:text-left"
                             style={{ animationDelay: "0.1s" }}
                         >
                             {title}
                         </h1>
 
-                        {/* Breadcrumb */}
+                        {/* Breadcrumb - Centered on Mobile/Tablet, Left on Desktop */}
                         <nav
                             aria-label="Breadcrumb"
-                            className="animate-fade-in-up"
+                            className="animate-fade-in-up flex justify-center lg:justify-start"
                             style={{ animationDelay: "0.2s" }}
                         >
-                            <ol className="flex items-center space-x-2 text-sm sm:text-base">
+                            <ol className="flex items-center space-x-2 text-sm sm:text-base text-white">
                                 {breadcrumbs.map((item, index) => (
                                     <li key={item.label} className="flex items-center">
                                         {index > 0 && (
