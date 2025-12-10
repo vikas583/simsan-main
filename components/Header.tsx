@@ -81,22 +81,25 @@ export default function Header() {
         ))}
       </List>
       <Box className="p-4">
-        <Button
-          variant="contained"
-          fullWidth
-          sx={{
-            backgroundColor: colors.primary,
-            color: colors.text.white,
-            py: 1.5,
-            borderRadius: 20,
-            fontWeight: 700,
-            fontSize: 18,
-            textTransform: "none",
-            '&:hover': { backgroundColor: colors.primary, opacity: 0.92 },
-          }}
-        >
-          REQUEST AN ESTIMATE →
-        </Button>
+        <Link href="/estimate" className="w-full no-underline">
+          <Button
+            variant="contained"
+            fullWidth
+            sx={{
+              backgroundColor: colors.primary,
+              color: colors.text.white,
+              py: { xs: 1, sm: 1.25, md: 1.5 },
+              px: { xs: 2, sm: 2.5, md: 3 },
+              borderRadius: { xs: 12, sm: 16, md: 20 },
+              fontWeight: 700,
+              fontSize: { xs: 14, sm: 16, md: 18 },
+              textTransform: "none",
+              '&:hover': { backgroundColor: colors.primary, opacity: 0.92 },
+            }}
+          >
+            REQUEST AN ESTIMATE →
+          </Button>
+        </Link>
       </Box>
     </Box>
   );
@@ -165,22 +168,24 @@ export default function Header() {
           </Box>
           {/* CTA Button on desktop */}
           <Box className="hidden lg:flex items-center flex-1 justify-end">
-            <Button
-              variant="contained"
-              sx={{
-                backgroundColor: colors.primary,
-                color: colors.text.white,
-                px: 3,
-                py: 1,
-                textTransform: "none",
-                borderRadius: 20,
-                fontWeight: 600,
-                fontSize: 17,
-                '&:hover': { backgroundColor: colors.primary, opacity: 0.9 },
-              }}
-            >
-              REQUEST AN ESTIMATE →
-            </Button>
+            <Link href="/estimate" className="no-underline">
+              <Button
+                variant="contained"
+                sx={{
+                  backgroundColor: colors.primary,
+                  color: colors.text.white,
+                  px: 3,
+                  py: 1,
+                  textTransform: "none",
+                  borderRadius: 20,
+                  fontWeight: 600,
+                  fontSize: 17,
+                  '&:hover': { backgroundColor: colors.primary, opacity: 0.9 },
+                }}
+              >
+                REQUEST AN ESTIMATE →
+              </Button>
+            </Link>
           </Box>
         </Toolbar>
       </AppBar>
