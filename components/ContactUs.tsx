@@ -11,25 +11,25 @@ export default function ContactUs() {
           {/* Left Section - Need Help */}
           <Box className="flex-1">
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-3"
+              className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-3 text-center sm:text-left"
               
             >
               Need Help?
             </h2>
             <p
-              className="text-xl md:text-2xl font-semibold mb-6"
+              className="text-xl md:text-2xl font-semibold mb-6 text-center sm:text-left"
               
             >
               We&apos;re just a message away!
             </p>
-            <p className="text-base md:text-lg mb-8 leading-relaxed" style={{ color: colors.text.primary }}>
+            <p className="text-base md:text-lg mb-8 leading-relaxed text-center sm:text-left" style={{ color: colors.text.primary }}>
               Whether you have questions, need guidance, or want to book a service, our team is always ready to assist you quickly and professionally.
             </p>
 
             {/* Contact Details */}
             <Box className="space-y-4 mb-8">
               {/* Email */}
-              <Box className="flex items-center gap-3">
+              <Box className="flex items-center gap-3 justify-center sm:justify-start">
                 <Box
                   className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
                   style={{ backgroundColor: `${colors.primary}15` }}
@@ -49,7 +49,7 @@ export default function ContactUs() {
               </Box>
 
               {/* Phone 1 */}
-              <Box className="flex items-center gap-3">
+              <Box className="flex items-center gap-3 justify-center sm:justify-start">
                 <Box
                   className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
                   style={{ backgroundColor: `${colors.primary}15` }}
@@ -68,7 +68,7 @@ export default function ContactUs() {
               </Box>
 
               {/* Phone 2 */}
-              <Box className="flex items-center gap-3">
+              <Box className="flex items-center gap-3 justify-center sm:justify-start">
                 <Box
                   className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
                   style={{ backgroundColor: `${colors.primary}15` }}
@@ -88,7 +88,7 @@ export default function ContactUs() {
             </Box>
 
             {/* Social Media Icons */}
-            <Box className="flex items-center gap-4">
+            <Box className="flex items-center gap-4 justify-center sm:justify-start">
               {/* WhatsApp */}
               <a
                 href="#"
@@ -138,10 +138,10 @@ export default function ContactUs() {
                 background: `linear-gradient(135deg, ${colors.primary} 0%, ${colors.secondary} 100%)`,
               }}
             >
-              <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 text-center sm:text-left">
                 Contact us Today
               </h2>
-              <p className="text-white text-base md:text-lg mb-8 leading-relaxed">
+              <p className="text-white md:text-lg mb-8 leading-relaxed text-center sm:text-left">
                 Have questions or need a service? We&apos;re here to help! Reach out to our team for quick support, bookings, or personalized assistance we&apos;d love to hear from you.
               </p>
 

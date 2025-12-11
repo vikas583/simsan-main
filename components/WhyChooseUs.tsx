@@ -5,18 +5,18 @@ import { colors } from "@/lib/colors";
 
 export default function WhyChooseUs() {
   return (
-    <Box className="w-full bg-white py-12 lg:py-16">
+    <Box className="w-full bg-highlight sm:pb-16 pb-10">
       <Box className="max-w-7xl mx-auto px-6 lg:px-8 xl:px-0">
-        <Box className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-center">
+        <Box className="flex flex-col lg:flex-row ">
           {/* Left Section - Image */}
           <Box className="flex-1 relative">
-            <Box className="relative rounded-2xl overflow-hidden">
+            <Box className="relative rounded-l-[32px] overflow-hidden sm:mb-0 mb-8">
               <Image
                 src="/homepage1.png"
                 alt="Professional cleaning service"
                 width={500}
-                height={400}
-                className="w-full h-auto max-h-[400px] rounded-2xl object-cover"
+                height={950}
+                className="w-full object-cover why-hoose-img"
               />
               {/* 100% Satisfaction Badge */}
               <Box
@@ -32,9 +32,9 @@ export default function WhyChooseUs() {
           </Box>
 
           {/* Right Section - Content */}
-          <Box className="flex-1">
+          <Box className="flex-1 bg-white py-10 px-10 rounded-b-[32px] rounded-t-[32px] sm-rounded-r-[32px]">
             <h2
-              className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-6 leading-tight"
+              className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-6 leading-tight text-center sm:text-left"
               style={{ color: colors.primary }}
             >
               Why Homeowners Choose Simsan Fraser Maintenance

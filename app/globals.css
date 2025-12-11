@@ -4,6 +4,7 @@
   /* Background colors */
   --background: #ffffff;
   --foreground: #212121;
+  --highlight:#FAFAFA;
   
   /* Primary color (orange-red) */
   --primary: #ff5722;
@@ -62,4 +63,26 @@ body {
 }
 .divide-border {
   border-top: 1px solid #ffe0d1;
+}
+.bg-highlight{
+  background-color: var(--highlight);
+}
+.why-hoose-img{
+  height: 620px;
+}
+/* home page our services card box respoonsive code */
+@media only screen and (max-width: 639px) {
+ .home-service-card {
+    text-align: center;
+    margin: 0 auto;
+    bottom: 0px!important;
+    width: 100%!important;
+    border-top-left-radius: 0px!important;
+    border-top-right-radius: 0px !important;
+    border: 1px solid #ff57224f;
+    border-top: none;
+}
+.why-hoose-img{
+  height: auto;
+}
 }

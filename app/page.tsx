@@ -28,16 +28,16 @@ export default function Home() {
               'linear-gradient(90deg, rgba(20,20,20,0.98) 0%, rgba(20,20,20,0.9) 34%, rgba(20,20,20,0.7) 48%, rgba(20,20,20,0.3) 70%, rgba(0,0,0,0.0) 100%)'
           }}
         />
-        <Box className="relative z-10 px-6 lg:px-16 py-16 flex-1 flex flex-col justify-center max-w-3xl">
-          <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight">
+        <Box className="relative z-10 px-6 lg:px-16 py-16 flex-1 flex flex-col justify-center items-center sm:items-start max-w-3xl">
+          <h1 className="text-center sm:text-left text-4xl md:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight">
             Your <span style={{ color: colors.primary }}>Trusted</span> Home Care Team
           </h1>
-          <p className="text-white text-base md:text-lg mb-8 leading-relaxed">
+          <p className="text-center sm:text-left text-white text-base md:text-lg mb-8 leading-relaxed">
             Since 1985, Simsan Fraser Maintenace Cleaning has been committed to providing the best, most effective home services in the Pacific Northwest. With 40+ years of expertise, our team arrives promptly and gets the job done right the first time—backed by a 100% satisfaction guarantee.
           </p>
           <a
             href="/estimate"
-            className="text-white font-semibold px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-md md:rounded-lg w-fit flex items-center gap-2 transition-colors duration-200 uppercase tracking-wide text-xs md:text-sm lg:text-base no-underline"
+            className="sm:mb-0 mb-8 text-white font-semibold px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-md md:rounded-lg w-fit flex items-center gap-2 transition-colors duration-200 uppercase tracking-wide text-xs md:text-sm lg:text-base no-underline"
             style={{ background: colors.primary }}
           >
             REQUEST AN ESTIMATE
@@ -55,25 +55,25 @@ export default function Home() {
 
       {/* About Section */}
       <Box className="flex-1 bg-white">
-        <Box className="max-w-6xl mx-auto px-0 sm:px-6 lg:px-8 xl:px-0 py-20 lg:py-24 flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
+        <Box className="max-w-6xl mx-auto px-0 sm:px-6 lg:px-8 xl:px-0 sm:py-20 py-10 lg:py-24 flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
           {/* Left Content */}
-          <Box className="flex-1 max-w-xl px-6 sm:px-0">
-            <p className="text-sm md:text-base font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: colors.primary }}>
-              About Us
+          <Box className="flex-1 max-w-xl px-6 sm:px-0 items-center sm:items-start flex flex-col">
+            <p className="text-center sm:text-left text-sm md:text-base font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: colors.primary }}>
+              About Us 
             </p>
-            <h2 className="text-xl md:text-xl lg:text-xl font-extrabold leading-snug mb-4" style={{ color: colors.secondary }}>
+            <h2 className="text-center sm:text-left text-xl md:text-xl lg:text-xl font-extrabold leading-snug mb-4" style={{ color: colors.secondary }}>
               Professional Window, Gutter, & Roof Cleaning
             </h2>
-            <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-4">
+            <p className="text-center sm:text-left text-gray-600 text-base md:text-lg leading-relaxed mb-4">
               We are your trusted cleaning and maintenance experts, offering complete solutions to keep your
               home and property looking its best. From Roof &amp; Gutter Cleaning to Window Washing, we
               ensure every corner shines with perfection.
             </p>
-            <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-4">
+            <p className="text-center sm:text-left text-gray-600 text-base md:text-lg leading-relaxed mb-4">
               Our Pressure Cleaning service restores surfaces to their original beauty removing dirt, grime,
               and stains with precision and care.
             </p>
-            <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
+            <p className="text-center sm:text-left text-gray-600 text-base md:text-lg leading-relaxed mb-8">
               We also bring festive joy to your home with professional Christmas Lighting &amp; Decoration,
               creating beautiful, safe, and eye catching displays for the holiday season.
             </p>

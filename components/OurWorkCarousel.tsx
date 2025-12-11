@@ -27,7 +27,7 @@ export default function OurWorkCarousel() {
     <Box className="w-full flex flex-col items-center justify-center py-10 md:py-16 px-4 md:px-2 select-none">
       <Typography
         variant="h4"
-        className="font-extrabold text-center mb-6 text-xl md:text-2xl lg:text-[2rem]"
+        className="font-extrabold text-center mb-10 text-xl md:text-2xl lg:text-[2rem]"
         style={{ color: colors.primary }}
       >
         Our Work

@@ -6,7 +6,7 @@ import { colors } from "@/lib/colors";
 
 export default function OurServices() {
   return (
-    <Box className="w-full bg-white py-16 lg:py-24">
+    <Box className="w-full bg-highlight sm:pt-16 sm:pb-8 py-10">
       <Box className="max-w-7xl mx-auto px-6 lg:px-8 xl:px-0">
         {/* Header */}
         <Box className="text-center mb-12 lg:mb-16">
@@ -46,7 +46,7 @@ export default function OurServices() {
               </Box>
             </Box>
             <Box 
-              className="bg-white px-8 pt-6 pb-8 flex flex-col flex-1"
+              className="bg-white px-8 pt-6 pb-8 flex flex-col flex-1 home-service-card"
               style={{ 
                 borderRadius: '32px',
                 width: '95%',
@@ -87,7 +87,7 @@ export default function OurServices() {
               </Box>
             </Box>
             <Box 
-              className="bg-white px-8 pt-6 pb-8 flex flex-col flex-1"
+              className="bg-white px-8 pt-6 pb-8 flex flex-col flex-1 home-service-card"
               style={{ 
                 borderRadius: '32px',
                 width: '95%',
@@ -127,7 +127,7 @@ export default function OurServices() {
               </Box>
             </Box>
             <Box 
-              className="bg-white px-8 pt-6 pb-8 flex flex-col flex-1"
+              className="bg-white px-8 pt-6 pb-8 flex flex-col flex-1 home-service-card"
               style={{ 
                 borderRadius: '32px',
                 width: '95%',
@@ -168,7 +168,7 @@ export default function OurServices() {
               </Box>
             </Box>
             <Box 
-              className="bg-white px-8 pt-6 pb-8 flex flex-col flex-1"
+              className="bg-white px-8 pt-6 pb-8 flex flex-col flex-1 home-service-card"
               style={{ 
                 borderRadius: '32px',
                 width: '95%',
