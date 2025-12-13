@@ -43,14 +43,14 @@ export default function HeroBanner({
       />
 
       {/* Content */}
-      <Box className="relative z-10 px-6 lg:px-16 py-16 flex-1 flex flex-col justify-center max-w-6xl mx-auto w-full">
+      <Box className="relative z-10 sm:py-16 py-0 sm:px-10 px-15 flex-1 flex flex-col justify-center sm:items-start items-center max-w-6xl mx-auto w-full">
         {/* Title - Always left-aligned, white, bold */}
         <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-6 leading-tight text-white text-left">
           {title}
         </h1>
 
         {/* Breadcrumbs - Always left-aligned, active in primary color, rest white */}
-        <nav aria-label="Breadcrumb" className="mb-8 flex justify-start">
+        <nav aria-label="Breadcrumb" className=" flex justify-start">
           <ol className="flex items-center space-x-2 text-sm sm:text-base">
             {breadcrumbs.map((item, index) => (
               <li key={item.label} className="flex items-center">

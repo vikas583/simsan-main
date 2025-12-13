@@ -92,7 +92,7 @@ export default function Footer() {
         <Box className="max-w-7xl mx-auto">
           <Box className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 pt-6">
             {/* Column 1: Logo & Company Info */}
-            <Box className="flex flex-col">
+            <Box className="flex flex-col sm:items-start items-center">
               <Image
                 src="/icons/logo.svg"
                 alt="Simsan Fraser Maintenance Ltd."
@@ -145,7 +145,7 @@ export default function Footer() {
             </Box>
 
             {/* Column 2: Company Links */}
-            <Box className="flex flex-col">
+            <Box className="flex flex-col text-center sm:text-left items-center sm:items-start">
               <Typography
                 variant="h6"
                 className="text-white font-bold mb-4"
@@ -168,7 +168,7 @@ export default function Footer() {
             </Box>
 
             {/* Column 3: Services */}
-            <Box className="flex flex-col">
+            <Box className="flex flex-col text-center sm:text-left items-center sm:items-start">
               <Typography
                 variant="h6"
                 className="text-white font-bold mb-4"
@@ -190,7 +190,7 @@ export default function Footer() {
             </Box>
 
             {/* Column 4: Contact Information */}
-            <Box className="flex flex-col">
+            <Box className="flex flex-col text-center sm:text-left items-center sm:items-start">
               <Typography
                 variant="h6"
                 className="text-white font-bold mb-4"
@@ -200,7 +200,7 @@ export default function Footer() {
               </Typography>
               <Box className="flex flex-col gap-4">
                 {/* Location */}
-                <Box className="flex items-start gap-3">
+                <Box className="flex items-start gap-3 justify-center sm:justify-start">
                   <Box
                     className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
                     style={{ background: colors.primary }}
@@ -215,7 +215,7 @@ export default function Footer() {
                 </Box>
 
                 {/* Phone 1 */}
-                <Box className="flex items-start gap-3">
+                <Box className="flex items-start gap-3 justify-center sm:justify-start">
                   <Box
                     className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
                     style={{ background: colors.primary }}
@@ -230,7 +230,7 @@ export default function Footer() {
                 </Box>
 
                 {/* Phone 2 */}
-                <Box className="flex items-start gap-3">
+                <Box className="flex items-start gap-3 justify-center sm:justify-start">
                   <Box
                     className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
                     style={{ background: colors.primary }}
@@ -245,7 +245,7 @@ export default function Footer() {
                 </Box>
 
                 {/* Email */}
-                <Box className="flex items-start gap-3">
+                <Box className="flex items-start gap-3 justify-center sm:justify-start">
                   <Box
                     className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
                     style={{ background: colors.primary }}

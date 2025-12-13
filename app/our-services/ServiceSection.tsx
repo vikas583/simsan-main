@@ -16,8 +16,8 @@ const serviceIcons: Record<string, React.ReactNode> = {
 
 const ServicesSection = () => {
     return (
-        <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
-            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-10 pb-0 sm:py-16 md:py-20 lg:py-24 bg-white">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header Section - Centered on Mobile/Tablet, Left on Desktop */}
                 <div className="mb-10 sm:mb-12 md:mb-16 text-center lg:text-left">
                     <h2 

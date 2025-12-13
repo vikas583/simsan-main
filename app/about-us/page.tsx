@@ -204,7 +204,7 @@ export default function AboutUsPage() {
             />
 
             {/* Main content card */}
-            <section className="py-16 px-4 md:px-8 lg:px-16 bg-card">
+            <section className="sm:py-16 py-10 px-4 md:px-8 lg:px-16 bg-card sm:text-left text-center">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                         {/* Left Content */}
@@ -225,7 +225,7 @@ export default function AboutUsPage() {
                             </p>
 
                             {/* CTA Buttons */}
-                            <div className="flex flex-wrap gap-4">
+                            <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
                                 <button className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">
                                     CALL US NOW
                                     <img src="/icons/arrow-right.svg" alt="Arrow Right" className="w-4 h-4" />
@@ -238,7 +238,7 @@ export default function AboutUsPage() {
                         </div>
 
                         {/* Right Images */}
-                        <div className="flex gap-4 h-[500px]">
+                        <div className="flex gap-4 h-[500px] sm:flex-row flex-column">
                             <div className="flex-1 rounded-2xl overflow-hidden shadow-lg">
                                 <img
                                     src="/home-about-img1.png"
@@ -258,7 +258,7 @@ export default function AboutUsPage() {
                 </div>
             </section>
             {/* Why Choose Simsan Section - 8 Card, True Design */}
-            <section className="py-16 px-4 md:px-8 lg:px-16 bg-background">
+            <section className="sm:py-16 py-10 px-4 md:px-8 lg:px-16 bg-background">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center mb-12 leading-tight">
                         Why Homeowners Choose Simsan<br className="hidden sm:block" /> Fraser Maintenance
@@ -333,7 +333,7 @@ export default function AboutUsPage() {
                 </Box>
             </Box>
             {/* What Drives Us Forward Section */}
-            <section className="py-20 px-4 md:px-8 lg:px-16  rounded-t-[3rem]">
+            <section className="bg-white sm:py-16 py-10 px-4 md:px-8 lg:px-16 ">
                 <div className="max-w-5xl mx-auto text-center">
                     {/* Main Heading */}
                     <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
