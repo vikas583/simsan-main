@@ -17,7 +17,7 @@ export const SERVICES: Service[] = [
     title: "Roof & Gutter Cleaning",
     shortTitle: "Roof &",
     description: "Clogged gutters can cause water to back up into your roof, walls, and foundation. Our professional cleaning removes leaves, needles, and debris to keep your drainage system flowing properly and prevent structural damage.",
-    longDescription: "Since 1985, Simsan Fraser Maintenance Cleaning has been committed to providing the best, most effective roof and gutter cleaning services in the Pacific Northwest. With 40+ years of expertise, our team arrives promptly and gets the job done right the first time—backed by a 100% satisfaction guarantee. We understand that your roof and gutters are critical components of your home's protection system, and we treat them with the care and professionalism they deserve.",
+    longDescription: "Tired of climbing ladders and risking your safety to clean your roof and gutters? AA Window, Roof & Gutter Cleaning is here to help. For over 40 years, we've been the trusted name in the Pacific Northwest for reliable, professional roof and gutter cleaning services. Our trained technicians don’t just clean — they inspect, protect, and extend the life of your roof and gutter system. We remove moss, leaves, and debris, ensure proper water flow, and handle minor repairs on the spot. And once we're done, we leave your property spotless.",
     subheading: "Serving the Greater Seattle & Portland Area",
     benefits: [
       "Experienced professionals with 40+ years of expertise",

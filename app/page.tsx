@@ -9,6 +9,8 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import ContactUs from "@/components/ContactUs";
 import CustomerReviews from "@/components/CustomerReviews";
 import OurWorkCarousel from "@/components/OurWorkCarousel";
+import HowItWorks from "@/components/HowItWorks";
+import AreasWeServeIn from "@/components/AreasWeServeIn";
 
 export default function Home() {
   return (
@@ -32,15 +34,25 @@ export default function Home() {
           <h1 className="text-center sm:text-left text-4xl md:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight">
             Your <span style={{ color: colors.primary }}>Trusted</span> Home Care Team
           </h1>
-          <p className="text-center sm:text-left text-white text-base md:text-lg mb-8 leading-relaxed">
-            Since 1985, Simsan Fraser Maintenace Cleaning has been committed to providing the best, most effective home services in the Pacific Northwest. With 40+ years of expertise, our team arrives promptly and gets the job done right the first time—backed by a 100% satisfaction guarantee.
+          <p className="text-center sm:text-left text-white text-base md:text-lg mb-4 leading-relaxed">
+            <span className="font-bold">Simsan Fraser Maintenance</span> Ltd provides reliable exterior cleaning and property maintenance for homeowners who value quality and care. 
           </p>
+          <p className="text-center sm:text-left text-white text-base md:text-lg mb-4 leading-relaxed">
+            We specialize in <span className="font-bold">roof cleaning by hand, gutter cleaning, moss removal, Anti moss treatment, Window Washing soft washing of the house, pressure washing of concrete surfaces, Christmas Lights Installation, Interior Exterior Painting and Epoxy Flooring</span> using safe methods that protect your home while delivering visible results.
+          </p>
+          <p className="text-center sm:text-left text-white text-base md:text-lg mb-4 leading-relaxed">
+            As a fully insured local company, we focus on honest pricing, clear communication and dependable service - every job, every time.
+          </p>
+          <p className="text-center sm:text-left text-white text-base md:text-lg mb-4 leading-relaxed font-bold">
+            Proudly serving Abbotsford, Anmore, Belcarra,Bowen Island, Burnaby, Chilliwack, Coquitlam, Delta, Hope, Langley, Lions Bay, Maple Ridge, Mission,New Westminster, North Vancouver, Pitt Meadows, Port Coquitlam, Port Moody, Richmond, Su rrey, Vancouver, West Vancouver, White Rock
+            </p>
+
           <a
             href="/estimate"
-            className="sm:mb-0 mb-8 text-white font-semibold px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-md md:rounded-lg w-fit flex items-center gap-2 transition-colors duration-200 uppercase tracking-wide text-xs md:text-sm lg:text-base no-underline"
+            className="sm:mb-0 mb-10 text-white font-semibold px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-md md:rounded-lg w-fit flex items-center gap-2 transition-colors duration-200 uppercase tracking-wide text-xs md:text-sm lg:text-base no-underline"
             style={{ background: colors.primary }}
           >
-            REQUEST AN ESTIMATE
+            Get a free, no-obligation quote today
             <svg className="w-4 h-4 md:w-4 md:h-4 lg:w-5 lg:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
@@ -49,34 +61,28 @@ export default function Home() {
       </Box>
 
       {/* Place the CTA with negative margin to overlap hero and white bg below */}
-      <Box className="w-full flex justify-center" style={{ marginTop: '-64px', position: 'relative', zIndex: 20 }}>
+      {/* <Box className="w-full flex justify-center" style={{ marginTop: '-32px', position: 'relative', zIndex: 20 }}>
         <ZipCodeCta />
-      </Box>
+      </Box> */}
 
       {/* About Section */}
       <Box className="flex-1 bg-white">
         <Box className="max-w-6xl mx-auto px-0 sm:px-6 lg:px-8 xl:px-0 sm:py-20 py-10 lg:py-24 flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
           {/* Left Content */}
           <Box className="flex-1 max-w-xl px-6 sm:px-0 items-center sm:items-start flex flex-col">
-            <p className="text-center sm:text-left text-sm md:text-base font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: colors.primary }}>
-              About Us 
+            <p className="text-center sm:text-left text-sm md:text-3xl font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: colors.primary }}>
+              About Us
             </p>
             <h2 className="text-center sm:text-left text-xl md:text-xl lg:text-xl font-extrabold leading-snug mb-4" style={{ color: colors.secondary }}>
               Professional Window, Gutter, & Roof Cleaning
             </h2>
             <p className="text-center sm:text-left text-gray-600 text-base md:text-lg leading-relaxed mb-4">
-              We are your trusted cleaning and maintenance experts, offering complete solutions to keep your
-              home and property looking its best. From Roof &amp; Gutter Cleaning to Window Washing, we
-              ensure every corner shines with perfection.
+              <span className="font-bold">Simsan Fraser Maintenance</span> Ltd is a locally owned and operated exterior cleaning and property maintenance company dedicated to protecting and enhancing homes across the Lower Mainland and Fraser Valley.
             </p>
             <p className="text-center sm:text-left text-gray-600 text-base md:text-lg leading-relaxed mb-4">
-              Our Pressure Cleaning service restores surfaces to their original beauty removing dirt, grime,
-              and stains with precision and care.
+              We specialize in <span className="font-bold">roof cleaning by hand, gutter cleaning, moss removal, Anti moss treatment, Window Washing, soft washing of the house, pressure washing of concrete surfaces, Christmas Lights Installation, Interior Exterior Painting and Epoxy Flooring</span> using proven, surface-safe techniques designed to extend the life of your property. Our focus is not just on making homes look clean - but on maintaining them properly and responsibly.
             </p>
-            <p className="text-center sm:text-left text-gray-600 text-base md:text-lg leading-relaxed mb-8">
-              We also bring festive joy to your home with professional Christmas Lighting &amp; Decoration,
-              creating beautiful, safe, and eye catching displays for the holiday season.
-            </p>
+           
             <button
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-sm md:text-base font-semibold text-white shadow-lg transition-colors duration-200"
               style={{ backgroundColor: colors.primary }}
@@ -126,6 +132,12 @@ export default function Home() {
 
       {/* Customer Reviews Section */}
       <CustomerReviews />
+
+      {/* How It Works Section */}
+      <HowItWorks />
+
+      {/* Areas We Serve Section */}
+      <AreasWeServeIn />
 
       <Footer />
     </Box>

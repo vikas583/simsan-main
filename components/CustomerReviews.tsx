@@ -65,20 +65,19 @@ export default function CustomerReviews() {
       className="w-full py-12 lg:py-16 flex flex-col items-center justify-center"
       style={{ background: colors.background.white }}
     >
-      <Typography
-        variant="h4"
+      <p
         className="text-center font-bold mb-4"
         style={{ color: colors.primary, fontSize: "2rem" }}
       >
         Customer Reviews
-      </Typography>
-      <Typography
-        variant="body1"
+      </p>
+      <p
+        
         className="text-center mb-8"
         style={{ fontSize: '1.1rem', color: colors.text.primary }}
       >
         See What Our Customers Say About Working With Us
-      </Typography>
+      </p>
       
       {/* Carousel Container */}
       <Box className="relative max-w-7xl w-full px-4 md:px-6 lg:px-8 overflow-hidden">

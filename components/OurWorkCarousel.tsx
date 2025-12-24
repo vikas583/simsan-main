@@ -25,13 +25,13 @@ export default function OurWorkCarousel() {
 
   return (
     <Box className="w-full flex flex-col items-center justify-center py-10 md:py-16 px-4 md:px-2 select-none">
-      <Typography
-        variant="h4"
-        className="font-extrabold text-center mb-10 text-xl md:text-2xl lg:text-[2rem]"
+      <p
+       
+        className="font-extrabold text-center mb-10 text-xl md:text-2xl lg:text-[2rem] font-semibold mb-4"
         style={{ color: colors.primary }}
       >
         Our Work
-      </Typography>
+      </p>
       <Box className="flex items-center justify-center w-full max-w-4xl mx-auto relative px-4 md:px-0">
         {/* Left Arrow - Overlay on mobile, outside on desktop */}
         <IconButton

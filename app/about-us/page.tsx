@@ -41,7 +41,7 @@ export default function AboutUsPage() {
                 <path d="M32 10v-4M28 12l-2-3M36 12l2-3" />
             </g>
         </svg>
-        
+
     );
     // Custom SVG Icons
     const VisionIcon = () => (
@@ -212,16 +212,27 @@ export default function AboutUsPage() {
                             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
                                 About Us
                             </h2>
-                            <h3 className="text-xl md:text-2xl font-bold text-primary mb-6 leading-tight">
-                                Simsan Fraser Maintenance | Fraser Valley Roof & Exterior Cleaning Experts
-                            </h3>
 
                             <p className="text-foreground mb-4 leading-relaxed">
-                                Simsan Fraser Maintenance is a trusted home-maintenance and exterior cleaning company proudly serving the Fraser Valley, including Vancouver, Burnaby, Langley, Tri Cities, Abbotsford, Chilliwack, Mission, Langley, and surrounding areas. We specialize in roof moss removal, gutter cleaning, soft washing, pressure washing, window washing, painting, and surface protection services designed to keep your home clean, safe, and looking its best year-round.
+                                <span className="font-bold">Simsan Fraser Maintenance Ltd</span>  is a locally owned and operated exterior cleaning and property maintenance company dedicated to protecting and enhancing homes across the Lower Mainland and Fraser Valley.
                             </p>
 
                             <p className="text-foreground mb-8 leading-relaxed">
-                                Built on quality workmanship, fair pricing, and friendly customer care, we've become a go-to choice for homeowners and property managers searching for reliable roof and exterior maintenance in the Fraser Valley.
+                                We specialize in <span className="font-bold">roof cleaning by hand, gutter cleaning, moss removal, Anti moss treatment, Window Washing, soft washing of the house, pressure washing of concrete surfaces, Christmas Lights Installation, Interior Exterior Painting and Epoxy Flooring</span> using proven, surface-safe techniques designed to extend the life of your property. Our focus is not just on making homes look clean - but on maintaining them properly and responsibly.
+                            </p>
+                            <p className="text-foreground mb-8 leading-relaxed">
+                                What sets us apart is our commitment to <span className="font-bold">quality workmanship, honest service and attention to detail</span>. We believe exterior maintenance should be done the right way, without shortcuts that can damage roofing, gutters, siding or any other surfaces. Every project begins with a clear assessment and ends with a thorough cleanup and visible results.
+                            </p>
+
+                            <p className="text-foreground mb-8 leading-relaxed">
+                                As a fully insured and professional maintenance team, we take pride in serving homeowners, landlords and property managers with reliable service they can trust. From small residential jobs to larger properties, we approach every project with the same level of care and professionalism.
+                            </p>
+                            <p className="text-foreground mb-8 leading-relaxed">
+                                At Simsan Fraser Maintenance Ltd, our goal is simple: <span className="font-bold">to be the trusted home care team our customers can rely on year after year</span>.
+                            </p>
+                            <p className="text-foreground mb-8 leading-relaxed font-bold">
+                                Proudly serving Abbotsford, Anmore, Belcarra,Bowen Island, Burnaby, Chilliwack, Coquitlam, Delta, Hope, Langley, Lions Bay, Maple Ridge, Mission,New Westminster, North Vancouver, Pitt Meadows, Port Coquitlam, Port Moody, Richmond, Surrey, Vancouver, West Vancouver and White Rock
+
                             </p>
 
                             {/* CTA Buttons */}
@@ -238,22 +249,34 @@ export default function AboutUsPage() {
                         </div>
 
                         {/* Right Images */}
-                        <div className="flex gap-4 h-[500px] sm:flex-row flex-column">
-                            <div className="flex-1 rounded-2xl overflow-hidden shadow-lg">
-                                <img
-                                    src="/home-about-img1.png"
-                                    alt="Roof with moss and leaves needing maintenance"
-                                    className="w-full h-full object-cover"
-                                />
+                        <div className="flex flex-col gap-4">
+                            {/* Top Two Images Side by Side */}
+                            <div className="flex gap-4 h-[500px] sm:flex-row flex-col">
+                                <div className="flex-1 rounded-2xl overflow-hidden shadow-lg">
+                                    <img
+                                        src="/home-about-img1.png"
+                                        alt="Roof with moss and leaves needing maintenance"
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <div className="flex-1 rounded-2xl overflow-hidden shadow-lg">
+                                    <img
+                                        src="/home-about-img1.png"
+                                        alt="Close-up of roof shingles with debris"
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
                             </div>
-                            <div className="flex-1 rounded-2xl overflow-hidden shadow-lg">
+                            {/* Third Image Below */}
+                            <div className="w-full rounded-2xl overflow-hidden shadow-lg h-[300px]">
                                 <img
-                                    src="/home-about-img1.png"
-                                    alt="Close-up of roof shingles with debris"
+                                    src="/home-about-imp2.png"
+                                    alt="Professional cleaning service"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </section>
@@ -296,38 +319,37 @@ export default function AboutUsPage() {
                         className="flex-1 flex flex-col justify-center bg-white px-5 md:px-9 xl:px-14 py-8 md:py-12 lg:py-16 rounded-[38px] shadow-2xl"
                         style={{ minWidth: 240, boxShadow: '0px 8px 32px 0px rgba(130,130,130,0.10)', marginBottom: 0 }}
                     >
-                        <Typography
-                            variant="h3"
+                        <p
                             className="font-extrabold text-[2.10rem] mb-2 xl:mb-3"
                             style={{ color: '#fd5e27', letterSpacing: '-1.5px', lineHeight: 1.13, marginTop: 0 }}
                         >
                             Our Approach
-                        </Typography>
-                        <Typography
+                        </p>
+                        <p
                             className="font-bold text-[1.14rem] mb-4 xl:mb-5"
                             style={{ color: '#ffb23b', lineHeight: 1.25, marginTop: 0 }}
                         >
                             We don’t believe in one-size-fits-all solutions.<br />Every property is unique, and so are your needs. That’s why we focus on:
-                        </Typography>
+                        </p>
                         <Box className="mb-1 xl:mb-2">
-                            <Typography className="font-bold mb-1 mt-3" style={{ color: '#fd5e27', fontSize: 17 }}>
+                            <p className="font-bold mb-1 mt-3" style={{ color: '#fd5e27', fontSize: 17 }}>
                                 Quality First
-                            </Typography>
-                            <Typography className="mb-3" style={{ color: '#595b5b', fontSize: 15, lineHeight: 1.65 }}>
+                            </p>
+                            <p className="mb-3" style={{ color: '#595b5b', fontSize: 15, lineHeight: 1.65 }}>
                                 Every service is performed with precision and attention to detail. Whether it’s your roof, driveway, patio, or windows — we ensure results that you can clearly see.
-                            </Typography>
-                            <Typography className="font-bold mb-1 mt-3" style={{ color: '#fd5e27', fontSize: 17 }}>
+                            </p>
+                            <p className="font-bold mb-1 mt-3" style={{ color: '#fd5e27', fontSize: 17 }}>
                                 Honest Pricing
-                            </Typography>
-                            <Typography className="mb-3" style={{ color: '#595b5b', fontSize: 15, lineHeight: 1.65 }}>
+                            </p>
+                            <p className="mb-3" style={{ color: '#595b5b', fontSize: 15, lineHeight: 1.65 }}>
                                 We offer competitive rates without compromising on quality. No hidden fees. No unnecessary add-ons. Just transparent, simple pricing.
-                            </Typography>
-                            <Typography className="font-bold mb-1 mt-3" style={{ color: '#fd5e27', fontSize: 17 }}>
+                            </p>
+                            <p className="font-bold mb-1 mt-3" style={{ color: '#fd5e27', fontSize: 17 }}>
                                 Safety & Care
-                            </Typography>
-                            <Typography className="mb-1" style={{ color: '#595b5b', fontSize: 15, lineHeight: 1.65 }}>
+                            </p>
+                            <p className="mb-1" style={{ color: '#595b5b', fontSize: 15, lineHeight: 1.65 }}>
                                 Your home is your most valuable asset. We combine gentle cleaning techniques with industry best practices to protect your property at every step.
-                            </Typography>
+                            </p>
                         </Box>
                     </Box>
                 </Box>
@@ -336,12 +358,12 @@ export default function AboutUsPage() {
             <section className="bg-white sm:py-16 py-10 px-4 md:px-8 lg:px-16 ">
                 <div className="max-w-5xl mx-auto text-center">
                     {/* Main Heading */}
-                    <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                    <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6" style={{ color: colors.primary }}>
                         What Drives Us Forward
                     </h2>
 
                     {/* Subheading */}
-                    <p className="text-primary text-lg md:text-xl font-semibold leading-relaxed mb-16 max-w-4xl mx-auto">
+                    <p className="text-secondary text-lg md:text-xl font-semibold leading-relaxed mb-16 max-w-4xl mx-auto">
                         We are driven by a commitment to quality, reliability, and customer satisfaction. Every project we take on inspires us to deliver better service, exceed expectations, and continuously improve the way we care for your property.
                     </p>
 

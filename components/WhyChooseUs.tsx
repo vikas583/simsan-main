@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
               >
                 <span className="text-white text-3xl font-extrabold leading-none mb-1">100%</span>
                 <span className="text-white text-[10px] font-bold uppercase text-center px-2 leading-tight">
-                  SATISFACTION<br/>GUARANTEED
+                  SATISFACTION<br />GUARANTEED
                 </span>
               </Box>
             </Box>
@@ -53,8 +53,8 @@ export default function WhyChooseUs() {
                     <path d="M8 6h6M8 12h6M8 18h6" />
                   </svg>
                 </Box>
-                <p className="text-sm md:text-base" style={{ color: colors.text.primary }}>
-                  <strong style={{ color: colors.primary }}>Local Fraser Valley experts</strong>
+                <p className="text-sm md:text-base font-semibold">
+                  Surface-safe cleaning methods
                 </p>
               </Box>
 
@@ -69,8 +69,8 @@ export default function WhyChooseUs() {
                     <path d="M9 9V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3" />
                   </svg>
                 </Box>
-                <p className="text-sm md:text-base" style={{ color: colors.text.primary }}>
-                  <strong style={{ color: colors.primary }}>High quality results with attention to detail</strong>
+                <p className="text-sm md:text-base font-semibold">
+                  Honest pricing with clear scope of work
                 </p>
               </Box>
 
@@ -84,8 +84,8 @@ export default function WhyChooseUs() {
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                   </svg>
                 </Box>
-                <p className="text-sm md:text-base" style={{ color: colors.text.primary }}>
-                  <strong style={{ color: colors.primary }}>Safe, effective cleaning methods</strong>
+                <p className="text-sm md:text-base font-semibold">
+                  Fully insured and professional team
                 </p>
               </Box>
 
@@ -100,32 +100,19 @@ export default function WhyChooseUs() {
                     <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
                   </svg>
                 </Box>
-                <p className="text-sm md:text-base" style={{ color: colors.text.primary }}>
-                  <strong style={{ color: colors.primary }}>Competitive pricing with no hidden fees</strong>
+                <p className="text-sm md:text-base font-semibold">
+                  Reliable service with visible results
                 </p>
               </Box>
 
-              {/* Point 5 */}
-              <Box className="flex items-start gap-3">
-                <Box
-                  className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: `${colors.primary}15` }}
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={colors.primary} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M3 3h18v18H3zM9 9h6v6H9z" />
-                    <path d="M21 9l-9 9M9 21l-9-9" />
-                  </svg>
-                </Box>
-                <p className="text-sm md:text-base" style={{ color: colors.text.primary }}>
-                  <strong style={{ color: colors.primary }}>Reliable, friendly service from start to finish</strong>
-                </p>
-              </Box>
             </Box>
 
             {/* Descriptive Paragraph */}
             <p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: colors.text.primary }}>
-              Whether you need roof moss removal, gutter cleaning, soft washing, pressure washing, driveway sealing, or professional painting, Simsan Fraser Maintenance is committed to excellent service and outstanding results every time.
+              Whether you need routine maintenance or a full exterior refresh, Simsan Fraser Maintenance Ltd delivers dependable service you can trust.
             </p>
+            <p className="text-sm md:text-base leading-relaxed mb-6 font-bold" style={{ color: colors.text.primary }}>
+Serving homeowners across the Lower Mainland and Fraser Valley.            </p>
 
             {/* CTA Buttons */}
             <Box className="flex flex-col sm:flex-row gap-3">
