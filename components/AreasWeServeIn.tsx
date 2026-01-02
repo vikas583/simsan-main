@@ -218,8 +218,8 @@ export default function AreasWeServeIn() {
             {/* Top Map - Portland Area */}
             <Box className="relative rounded-lg overflow-hidden shadow-lg" style={{ zIndex: 2 }}>
               <Image
-                src="/map-vancouver-area.jpg"
-                alt="Greater Vancouver Area Service Map"
+                src="/portland-map.png"
+                alt="Portland Area Service Map"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover rounded-lg"
