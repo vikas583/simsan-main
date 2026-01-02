@@ -20,7 +20,7 @@ export default function ContactUs() {
   const [formData, setFormData] = useState<ContactCreateRequest>({
     name: "",
     email: "",
-    phone: "",
+    phone: "+1",
     service: "",
     message: "",
   });
@@ -33,6 +33,49 @@ export default function ContactUs() {
   const validateEmail = (email: string): boolean => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
+  };
+
+  // Phone formatting: formats to +1-XXX-XXX-XXXX
+  const formatPhoneNumber = (value: string): string => {
+    // Remove all non-digit characters except +
+    const cleaned = value.replace(/[^\d+]/g, "");
+    
+    // Always ensure it starts with +1
+    if (!cleaned.startsWith("+1")) {
+      if (cleaned.startsWith("1")) {
+        return `+${cleaned}`;
+      }
+      if (cleaned.startsWith("+")) {
+        return cleaned.length === 1 ? "+1" : `+1${cleaned.slice(1)}`;
+      }
+      // If empty or doesn't start with + or 1, return +1
+      if (cleaned === "") {
+        return "+1";
+      }
+      return `+1${cleaned}`;
+    }
+    
+    // If user tries to delete +1, keep it
+    if (cleaned === "+1" || cleaned.length < 2) {
+      return "+1";
+    }
+    
+    // Extract digits after +1
+    const digits = cleaned.slice(2);
+    
+    // Limit to 10 digits
+    const limitedDigits = digits.slice(0, 10);
+    
+    // Format: +1-XXX-XXX-XXXX
+    if (limitedDigits.length === 0) {
+      return "+1";
+    } else if (limitedDigits.length <= 3) {
+      return `+1-${limitedDigits}`;
+    } else if (limitedDigits.length <= 6) {
+      return `+1-${limitedDigits.slice(0, 3)}-${limitedDigits.slice(3)}`;
+    } else {
+      return `+1-${limitedDigits.slice(0, 3)}-${limitedDigits.slice(3, 6)}-${limitedDigits.slice(6)}`;
+    }
   };
 
   // Phone validation: must start with +1 and have 10 digits after
@@ -63,7 +106,7 @@ export default function ContactUs() {
     if (!formData.phone.trim()) {
       newErrors.phone = "Mobile number is required";
     } else if (!validatePhone(formData.phone)) {
-      newErrors.phone = "Phone must start with +1 followed by 10 digits (e.g., +16048804476)";
+      newErrors.phone = "Phone must start with +1 followed by 10 digits (e.g., +1-604-880-4476)";
     }
 
     // Service validation
@@ -84,7 +127,15 @@ export default function ContactUs() {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value || "" }));
+    
+    // Format phone number as user types
+    if (name === "phone") {
+      const formatted = formatPhoneNumber(value);
+      setFormData((prev) => ({ ...prev, [name]: formatted }));
+    } else {
+      setFormData((prev) => ({ ...prev, [name]: value || "" }));
+    }
+    
     // Clear error for this field when user starts typing
     if (errors[name as keyof FormErrors]) {
       setErrors((prev) => ({ ...prev, [name]: undefined }));
@@ -116,7 +167,7 @@ export default function ContactUs() {
         setFormData({
           name: "",
           email: "",
-          phone: "",
+          phone: "+1",
           service: "",
           message: "",
         });
@@ -335,13 +386,18 @@ export default function ContactUs() {
                   <input
                     type="tel"
                     name="phone"
-                    value={formData.phone || ""}
+                    value={formData.phone || "+1"}
                     onChange={handleInputChange}
+                    onFocus={(e) => {
+                      if (!e.target.value || e.target.value === "") {
+                        setFormData((prev) => ({ ...prev, phone: "+1" }));
+                      }
+                    }}
                     required
                     className={`w-full px-4 py-3 rounded-lg bg-white text-gray-800 border-none focus:outline-none focus:ring-2 focus:ring-white ${
                       errors.phone ? "ring-2 ring-red-300" : ""
                     }`}
-                    placeholder="+16048804476"
+                    placeholder="+1-604-880-4476"
                   />
                   {errors.phone && (
                     <p className="text-red-200 text-sm mt-1">{errors.phone}</p>
