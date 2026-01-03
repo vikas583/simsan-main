@@ -1,5 +1,5 @@
 "use client";
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, useMemo } from "react";
 import Box from "@mui/material/Box";
 import { colors } from "@/lib/colors";
 import { CONTACT_INFO } from "@/constants";
@@ -7,6 +7,8 @@ import { createContact } from "@/lib/api/contact";
 import type { ContactCreateRequest } from "@/types";
 import Toast from "./Toast";
 import { useToast } from "@/hooks/useToast";
+import { SERVICES } from "@/constants/services";
+import { getCategoryDisplayName } from "@/lib/gallery-types";
 
 interface FormErrors {
   name?: string;
@@ -28,6 +30,38 @@ export default function ContactUs() {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast, showToast, hideToast } = useToast();
+
+  // Get all service options from SERVICES and additional gallery categories
+  const allServices = useMemo(() => {
+    // Start with services from SERVICES constant
+    const serviceOptions = SERVICES.map((service) => service.title);
+    
+    // Add additional gallery categories that aren't in SERVICES
+    const additionalCategories = [
+      "asphalt-shingle-roof-cleaning",
+      "cedar-roof-cleaning",
+      "concrete-tile-roof-cleaning",
+      "flat-roof-cleaning",
+      "pressure-washing-concrete-floors",
+      "pressure-washing-floors",
+      "roof-blow-and-debris-cleaning",
+      "spanish-tile-roof-cleaning",
+    ];
+    
+    // Filter out categories that already exist in SERVICES
+    const servicesSlugs = SERVICES.map((s) => s.slug);
+    const uniqueAdditionalCategories = additionalCategories.filter(
+      (cat) => !servicesSlugs.includes(cat)
+    );
+    
+    // Get display names for additional categories
+    const additionalServiceNames = uniqueAdditionalCategories.map((cat) =>
+      getCategoryDisplayName(cat)
+    );
+    
+    // Combine and sort alphabetically
+    return [...serviceOptions, ...additionalServiceNames].sort();
+  }, []);
 
   // Email validation
   const validateEmail = (email: string): boolean => {
@@ -420,13 +454,11 @@ export default function ContactUs() {
                       }`}
                     >
                       <option value="">Select a service</option>
-                      <option value="Roof & Gutter Cleaning">Roof & Gutter Cleaning</option>
-                      <option value="Window Washing">Window Washing</option>
-                      <option value="Pressure Cleaning">Pressure Cleaning</option>
-                      <option value="Christmas Lighting & Decoration">
-                        Christmas Lighting & Decoration
-                      </option>
-                      <option value="Roof Cleaning">Roof Cleaning</option>
+                      {allServices.map((service) => (
+                        <option key={service} value={service}>
+                          {service}
+                        </option>
+                      ))}
                     </select>
                     <Box className="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none">
                       <svg
