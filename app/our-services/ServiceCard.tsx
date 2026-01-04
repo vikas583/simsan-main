@@ -26,7 +26,7 @@ const ServiceCard = ({ icon, title, description, slug, onLearnMore }: ServiceCar
                 <div 
                     className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-full flex items-center justify-center"
                     style={{ 
-                        backgroundColor: colors.primary,
+                        background: `linear-gradient(135deg, ${colors.secondary} 0%, ${colors.primary} 100%)`,
                         boxShadow: '0 4px 16px rgba(255, 87, 34, 0.2)'
                     }}
                 >

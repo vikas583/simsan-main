@@ -37,16 +37,8 @@ export default function ContactUs() {
     const serviceOptions = SERVICES.map((service) => service.title);
     
     // Add additional gallery categories that aren't in SERVICES
-    const additionalCategories = [
-      "asphalt-shingle-roof-cleaning",
-      "cedar-roof-cleaning",
-      "concrete-tile-roof-cleaning",
-      "flat-roof-cleaning",
-      "pressure-washing-concrete-floors",
-      "pressure-washing-floors",
-      "roof-blow-and-debris-cleaning",
-      "spanish-tile-roof-cleaning",
-    ];
+    // Note: Most services are now in SERVICES, so this list is minimal
+    const additionalCategories: string[] = [];
     
     // Filter out categories that already exist in SERVICES
     const servicesSlugs = SERVICES.map((s) => s.slug);
@@ -59,8 +51,9 @@ export default function ContactUs() {
       getCategoryDisplayName(cat)
     );
     
-    // Combine and sort alphabetically
-    return [...serviceOptions, ...additionalServiceNames].sort();
+    // Combine and remove duplicates, then sort alphabetically
+    const allServicesSet = new Set([...serviceOptions, ...additionalServiceNames]);
+    return Array.from(allServicesSet).sort();
   }, []);
 
   // Email validation

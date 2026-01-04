@@ -4,6 +4,14 @@ import ServiceCard from "./ServiceCard";
 import WindowWashingIcon from "@/public/icons/tsx/WindowWashingIcon";
 import PressureCleaningIcon from "@/public/icons/tsx/PressureCleaningIcon";
 import ChristmasDecorationIcon from "@/public/icons/tsx/ChristmasDecorationIcon";
+import AsphaltShingleRoofCleaningIcon from "@/public/icons/tsx/AsphaltShingleRoofCleaningIcon";
+import CedarRoofCleaningIcon from "@/public/icons/tsx/CedarRoofCleaningIcon";
+import ConcreteTileRoofCleaningIcon from "@/public/icons/tsx/ConcreteTileRoofCleaningIcon";
+import FlatRoofCleaningIcon from "@/public/icons/tsx/FlatRoofCleaningIcon";
+import PressureWashingConcreteFloorsIcon from "@/public/icons/tsx/PressureWashingConcreteFloorsIcon";
+import PressureWashingFloorsIcon from "@/public/icons/tsx/PressureWashingFloorsIcon";
+import RoofBlowDebrisCleaningIcon from "@/public/icons/tsx/RoofBlowDebrisCleaningIcon";
+import SpanishTileRoofCleaningIcon from "@/public/icons/tsx/SpanishTileRoofCleaningIcon";
 import { colors } from "@/lib/colors";
 import { SERVICES } from "@/constants/services";
 
@@ -12,6 +20,14 @@ const serviceIcons: Record<string, React.ReactNode> = {
     "window-washing": <WindowWashingIcon className="w-full h-full" />,
     "pressure-cleaning": <PressureCleaningIcon className="w-full h-full" />,
     "christmas-lighting-decoration": <ChristmasDecorationIcon className="w-full h-full" />,
+    "asphalt-shingle-roof-cleaning": <AsphaltShingleRoofCleaningIcon className="w-full h-full" />,
+    "cedar-roof-cleaning": <CedarRoofCleaningIcon className="w-full h-full" />,
+    "concrete-tile-roof-cleaning": <ConcreteTileRoofCleaningIcon className="w-full h-full" />,
+    "flat-roof-cleaning": <FlatRoofCleaningIcon className="w-full h-full" />,
+    "pressure-washing-concrete-floors": <PressureWashingConcreteFloorsIcon className="w-full h-full" />,
+    "pressure-washing-floors": <PressureWashingFloorsIcon className="w-full h-full" />,
+    "roof-blow-debris-cleaning": <RoofBlowDebrisCleaningIcon className="w-full h-full" />,
+    "spanish-tile-roof-cleaning": <SpanishTileRoofCleaningIcon className="w-full h-full" />,
 };
 
 const ServicesSection = () => {
