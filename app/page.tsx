@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { colors } from "@/lib/colors";
 import ZipCodeCta from "@/components/ZipCodeCta";
 import Image from "next/image";
+import Link from "next/link";
 import OurServices from "@/components/OurServices";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ContactUs from "@/components/ContactUs";
@@ -83,15 +84,16 @@ export default function Home() {
               We specialize in <span className="font-bold">roof cleaning by hand, gutter cleaning, moss removal, Anti moss treatment, Window Washing, soft washing of the house, pressure washing of concrete surfaces, Christmas Lights Installation, Interior Exterior Painting and Epoxy Flooring</span> using proven, surface-safe techniques designed to extend the life of your property. Our focus is not just on making homes look clean - but on maintaining them properly and responsibly.
             </p>
            
-            <button
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-sm md:text-base font-semibold text-white shadow-lg transition-colors duration-200"
+            <Link
+              href="/about-us"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-sm md:text-base font-semibold text-white shadow-lg transition-colors duration-200 no-underline"
               style={{ backgroundColor: colors.primary }}
             >
               LEARN MORE
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </button>
+            </Link>
           </Box>
 
           {/* Right Images - Full width on mobile, side by side on desktop */}

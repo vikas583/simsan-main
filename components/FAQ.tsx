@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Box from "@mui/material/Box";
+import Link from "next/link";
 import { colors } from "@/lib/colors";
 import { CONTACT_INFO } from "@/constants";
 
@@ -146,15 +147,16 @@ export default function FAQ({
                   {CONTACT_INFO.PHONE.split(' | ')[0]}
                 </a>
               </p>
-              <button
-                className="text-white font-semibold px-6 md:px-8 py-3 md:py-4 rounded-lg w-full sm:w-fit flex items-center justify-center gap-2 transition-colors duration-200 uppercase tracking-wide text-sm md:text-base whitespace-nowrap"
+              <Link
+                href="/estimate"
+                className="text-white font-semibold px-6 md:px-8 py-3 md:py-4 rounded-lg w-full sm:w-fit flex items-center justify-center gap-2 transition-colors duration-200 uppercase tracking-wide text-sm md:text-base whitespace-nowrap no-underline"
                 style={{ background: colors.primary }}
               >
                 GET ESTIMATE NOW
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </button>
+              </Link>
             </Box>
           </Box>
         )}

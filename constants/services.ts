@@ -127,39 +127,23 @@ export const SERVICES: Service[] = [
     area: "Greater Seattle & Portland Area"
   },
   {
-    slug: "cedar-roof-cleaning",
-    title: "Cedar Roof Cleaning",
-    shortTitle: "Cedar Roof",
-    description: "Clogged gutters can cause water to back up into your roof, walls, and foundation. Our professional cleaning removes leaves, needles, and debris to keep your drainage system flowing properly and prevent structural damage.",
-    longDescription: "Since 1985, Simsan Fraser Maintenance Cleaning has been committed to providing the best, most effective cedar roof cleaning services in the Pacific Northwest. With 40+ years of expertise, our team arrives promptly and gets the job done right the first time—backed by a 100% satisfaction guarantee. Our professional cleaning removes leaves, needles, and debris to keep your drainage system flowing properly and prevent structural damage.",
+    slug: "window-cleaning",
+    title: "Window Cleaning",
+    shortTitle: "Window",
+    description: "Crystal clear windows enhance your property's appearance and let in more natural light. Our professional window cleaning service removes dirt, grime, and streaks for spotless results every time.",
+    longDescription: "Since 1985, Simsan Fraser Maintenance Cleaning has been committed to providing the best, most effective window cleaning services in the Pacific Northwest. With 40+ years of expertise, our team arrives promptly and gets the job done right the first time—backed by a 100% satisfaction guarantee. We don't use any chemicals or soaps to clean windows, ensuring a streak-free, crystal-clear finish that enhances your property's appearance.",
     subheading: "Serving the Greater Seattle & Portland Area",
     benefits: [
-      "Professional cleaning removes leaves, needles, and debris",
-      "Prevents water backup and structural damage",
-      "Extends the life of your cedar roof",
+      "Streak-free, crystal-clear results every time",
+      "Chemical-free cleaning methods for safety",
+      "Professional equipment and techniques",
       "Flexible scheduling to fit your routine"
     ],
-    heroImage: "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_1.jpeg",
+    heroImage: "/home-about-img1.png",
     galleryImages: [
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_1.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_2.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_3.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_4.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_5.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_6.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_7.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_8.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_9.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_10.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_11.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_12.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_13.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_14.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_15.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_16.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_17.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_18.jpeg",
-      "/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_19.jpeg"
+      "/home-about-img1.png",
+      "/home-about-imp2.png",
+      "/homepage1.png"
     ],
     area: "Greater Seattle & Portland Area"
   },
@@ -263,23 +247,23 @@ export const SERVICES: Service[] = [
     area: "Greater Seattle & Portland Area"
   },
   {
-    slug: "pressure-washing-floors",
-    title: "Pressure Washing Floors",
-    shortTitle: "Pressure Washing",
-    description: "Clogged gutters can cause water to back up into your roof, walls, and foundation. Our professional cleaning removes leaves, needles, and debris to keep your drainage system flowing properly and prevent structural damage.",
-    longDescription: "Since 1985, Simsan Fraser Maintenance Cleaning has been committed to providing the best, most effective pressure washing floors services in the Pacific Northwest. With 40+ years of expertise, our team arrives promptly and gets the job done right the first time—backed by a 100% satisfaction guarantee. Our professional cleaning removes leaves, needles, and debris to keep your drainage system flowing properly and prevent structural damage.",
+    slug: "pressure-washing",
+    title: "Pressure Washing",
+    shortTitle: "Pressure",
+    description: "Restore your property's exterior surfaces to like-new condition. Our pressure washing service effectively removes mold, mildew, dirt, and stains from driveways, walkways, decks, and siding.",
+    longDescription: "Since 1985, Simsan Fraser Maintenance Cleaning has been committed to providing the best, most effective pressure washing services in the Pacific Northwest. With 40+ years of expertise, our team arrives promptly and gets the job done right the first time—backed by a 100% satisfaction guarantee. Our pressure washing service restores surfaces to their original beauty, removing dirt, grime, and stains with precision and care.",
     subheading: "Serving the Greater Seattle & Portland Area",
     benefits: [
-      "Professional cleaning removes leaves, needles, and debris",
-      "Prevents water backup and structural damage",
-      "Restores floors to like-new condition",
+      "Restores surfaces to like-new condition",
+      "Removes mold, mildew, dirt, and stains",
+      "Safe for driveways, walkways, decks, and siding",
       "Flexible scheduling to fit your routine"
     ],
-    heroImage: "/pressure_washing_floor/simsan_fraser_pressure_washing_floor_1.jpeg",
+    heroImage: "/home-about-imp2.png",
     galleryImages: [
-      "/pressure_washing_floor/simsan_fraser_pressure_washing_floor_1.jpeg",
-      "/pressure_washing_floor/simsan_fraser_pressure_washing_floor_2.jpeg",
-      "/pressure_washing_floor/simsan_fraser_pressure_washing_floor_3.jpeg"
+      "/home-about-img1.png",
+      "/home-about-imp2.png",
+      "/homepage1.png"
     ],
     area: "Greater Seattle & Portland Area"
   },

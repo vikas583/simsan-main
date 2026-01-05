@@ -234,14 +234,14 @@ export default function AboutUsPage() {
 
                             {/* CTA Buttons */}
                             <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
-                                <button className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">
+                                <a href="tel:+17782227988" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors no-underline">
                                     CALL US NOW
                                     <img src="/icons/arrow-right.svg" alt="Arrow Right" className="w-4 h-4" />
-                                </button>
-                                <button className="inline-flex items-center gap-2 border-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">
+                                </a>
+                                <Link href="/estimate" className="inline-flex items-center gap-2 border-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors no-underline">
                                     GET FREE QUOTE
                                     <img src="/icons/arrow-right.svg" alt="Arrow Right" className="w-4 h-4" />
-                                </button>
+                                </Link>
                             </div>
                         </div>
 

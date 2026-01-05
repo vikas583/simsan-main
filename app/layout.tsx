@@ -13,7 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "SimSanFraser",
+  title: "Simsan Fraser Maintenance",
   description: "Modern Next.js application with SSR, Tailwind CSS, and Material-UI",
 };
 

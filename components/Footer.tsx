@@ -16,8 +16,8 @@ const companyLinks = [
 
 const services = [
   { name: "Roof & Gutter Cleaning", slug: "roof-gutter-cleaning" },
-  { name: "Window Cleaning", slug: null }, // Link to services page
-  { name: "Pressure Washing", slug: null }, // Link to services page (multiple pressure washing services)
+  { name: "Window Cleaning", slug: "window-cleaning" },
+  { name: "Pressure Washing", slug: "pressure-washing" },
   { name: "Christmas Light & Decoration", slug: "christmas-lighting-decoration" },
 ];
 
@@ -57,8 +57,9 @@ export default function Footer() {
           </Typography>
         </Box>
         <Box className="flex flex-col md:flex-row gap-3 w-full lg:w-auto justify-center md:justify-center lg:justify-start">
-          <Box
-            className="px-6 py-3 rounded-full bg-white text-center cursor-pointer hover:bg-gray-100 transition-colors"
+          <a
+            href="tel:+17782227988"
+            className="px-6 py-3 rounded-full bg-white text-center cursor-pointer hover:bg-gray-100 transition-colors no-underline"
             style={{ minWidth: '200px' }}
           >
             <Typography
@@ -68,9 +69,10 @@ export default function Footer() {
             >
               +1-778-222-7988
             </Typography>
-          </Box>
-          <Box
-            className="px-6 py-3 rounded-full bg-white text-center cursor-pointer hover:bg-gray-100 transition-colors"
+          </a>
+          <a
+            href="tel:+16048804476"
+            className="px-6 py-3 rounded-full bg-white text-center cursor-pointer hover:bg-gray-100 transition-colors no-underline"
             style={{ minWidth: '200px' }}
           >
             <Typography
@@ -80,7 +82,7 @@ export default function Footer() {
             >
               +1-604-880-4476
             </Typography>
-          </Box>
+          </a>
         </Box>
       </Box>
 
