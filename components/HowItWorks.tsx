@@ -60,9 +60,8 @@ export default function HowItWorks() {
                 style={{ fontSize: "1rem", marginLeft: "72px" }}
               >
                 Call us at{" "}
-                <span style={{ color: colors.primary, fontWeight: 600 }}>
-                  +1-778-222-7988 +1-604-880-4476
-                </span>{" "}
+                <a href="tel:+17782227988" style={{ color: colors.primary, fontWeight: 600, textDecoration: 'none' }}>+1-778-222-7988</a>{" "}
+                <a href="tel:+16048804476" style={{ color: colors.primary, fontWeight: 600, textDecoration: 'none' }}>+1-604-880-4476</a>{" "}
                 or fill out a form and we will provide a free estimate.
               </Typography>
             </Box>

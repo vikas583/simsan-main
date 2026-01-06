@@ -30,7 +30,7 @@ export default function OurServices() {
           <Box className="overflow-visible rounded-t-[32px] flex flex-col">
             <Box className="relative overflow-visible">
               <Image
-                src="/home-about-imp2.png"
+                src="/gutter_cleaning/simsan_fraser_gutter_cleaning_1.webp"
                 alt="Roof & Gutter Cleaning"
                 width={700}
                 height={510}
@@ -77,7 +77,7 @@ export default function OurServices() {
           <Box className="overflow-visible rounded-t-[32px] flex flex-col">
             <Box className="relative overflow-visible">
               <Image
-                src="/home-about-img1.png"
+                src="/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_1.webp"
                 alt="Window Washing"
                 width={700}
                 height={510}
@@ -108,13 +108,15 @@ export default function OurServices() {
                 position: 'relative'
               }}
             >
-              <h3 className="text-2xl font-extrabold mb-3 leading-snug" style={{ color: colors.primary }}>
-                Window Washing
-              </h3>
+              <Link href="/services/window-cleaning" className="no-underline">
+                <h3 className="text-2xl font-extrabold mb-3 leading-snug hover:opacity-80 transition-opacity" style={{ color: colors.primary }}>
+                  Window Cleaning
+                </h3>
+              </Link>
               <p className="text-gray-600 md:text-lg mb-5 flex-1" style={{ color: colors.text.primary }}>
                 Want your house to shine bright? Call us and get your windows cleaned quickly! We don&apos;t use any chemicals or soaps to clean windows.
               </p>
-              <Link href="/services/window-washing" className="font-bold text-lg block w-full pt-3 pb-1 mt-auto no-underline" style={{ color: colors.primary, background: 'none' }}>
+              <Link href="/services/window-cleaning" className="font-bold text-lg block w-full pt-3 pb-1 mt-auto no-underline" style={{ color: colors.primary, background: 'none' }}>
                 LEARN MORE <span className="inline-block align-middle"><svg className="w-5 h-5 inline ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg></span>
               </Link>
             </Box>
@@ -124,7 +126,7 @@ export default function OurServices() {
           <Box className="overflow-visible rounded-t-[32px] flex flex-col">
             <Box className="relative overflow-visible">
               <Image
-                src="/home-about-img1.png"
+                src="/pressure_washing_concrete_floors/simsan_fraser_pressure_washing_concrete_floors_1.webp"
                 alt="Pressure Cleaning"
                 width={700}
                 height={510}
@@ -155,13 +157,15 @@ export default function OurServices() {
                 position: 'relative'
               }}
             >
-              <h3 className="text-2xl font-extrabold mb-3 leading-snug" style={{ color: colors.primary }}>
-                Pressure Cleaning
-              </h3>
+              <Link href="/services/pressure-washing" className="no-underline">
+                <h3 className="text-2xl font-extrabold mb-3 leading-snug hover:opacity-80 transition-opacity" style={{ color: colors.primary }}>
+                  Pressure Washing
+                </h3>
+              </Link>
               <p className="text-gray-600 md:text-lg mb-5 flex-1" style={{ color: colors.text.primary }}>
                 Pressure washing or power washing is the use of high-pressure water spray to remove loose paint, mold, grime, dust
               </p>
-              <Link href="/services/pressure-cleaning" className="font-bold text-lg block w-full pt-3 pb-1 mt-auto no-underline" style={{ color: colors.primary, background: 'none' }}>
+              <Link href="/services/pressure-washing" className="font-bold text-lg block w-full pt-3 pb-1 mt-auto no-underline" style={{ color: colors.primary, background: 'none' }}>
                 LEARN MORE <span className="inline-block align-middle"><svg className="w-5 h-5 inline ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg></span>
               </Link>
             </Box>
@@ -171,7 +175,7 @@ export default function OurServices() {
           <Box className="overflow-visible rounded-t-[32px] flex flex-col">
             <Box className="relative overflow-visible">
               <Image
-                src="/home-about-imp2.png"
+                src="/christmas_light_setup/simsan_fraser_christmas_light_setup_1.webp"
                 alt="Christmas Lighting & Decoration"
                 width={700}
                 height={510}

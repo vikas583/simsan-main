@@ -1,7 +1,9 @@
 "use client";
 import Box from "@mui/material/Box";
 import Image from "next/image";
+import Link from "next/link";
 import { colors } from "@/lib/colors";
+import { CONTACT_INFO } from "@/constants";
 
 export default function WhyChooseUs() {
   return (
@@ -116,24 +118,26 @@ Serving homeowners across the Lower Mainland and Fraser Valley.            </p>
 
             {/* CTA Buttons */}
             <Box className="flex flex-col sm:flex-row gap-3">
-              <button
-                className="px-6 py-3 rounded-lg text-sm font-semibold text-white flex items-center justify-center gap-2 transition-colors duration-200 uppercase tracking-wide"
+              <a
+                href="tel:+17782227988"
+                className="px-6 py-3 rounded-lg text-sm font-semibold text-white flex items-center justify-center gap-2 transition-colors duration-200 uppercase tracking-wide no-underline"
                 style={{ backgroundColor: colors.primary }}
               >
                 CALL US NOW
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </button>
-              <button
-                className="px-6 py-3 rounded-lg text-sm font-semibold text-white flex items-center justify-center gap-2 transition-colors duration-200 uppercase tracking-wide"
+              </a>
+              <Link
+                href="/estimate"
+                className="px-6 py-3 rounded-lg text-sm font-semibold text-white flex items-center justify-center gap-2 transition-colors duration-200 uppercase tracking-wide no-underline"
                 style={{ backgroundColor: colors.primary }}
               >
                 GET QUOTE
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </button>
+              </Link>
             </Box>
           </Box>
         </Box>

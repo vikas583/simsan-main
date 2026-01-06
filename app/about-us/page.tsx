@@ -234,14 +234,14 @@ export default function AboutUsPage() {
 
                             {/* CTA Buttons */}
                             <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
-                                <button className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">
+                                <a href="tel:+17782227988" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors no-underline">
                                     CALL US NOW
                                     <img src="/icons/arrow-right.svg" alt="Arrow Right" className="w-4 h-4" />
-                                </button>
-                                <button className="inline-flex items-center gap-2 border-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">
+                                </a>
+                                <Link href="/estimate" className="inline-flex items-center gap-2 border-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors no-underline">
                                     GET FREE QUOTE
                                     <img src="/icons/arrow-right.svg" alt="Arrow Right" className="w-4 h-4" />
-                                </button>
+                                </Link>
                             </div>
                         </div>
 
@@ -305,10 +305,10 @@ export default function AboutUsPage() {
                     {/* Left: Big Image */}
                     <Box className="flex-1 flex items-center justify-center">
                         <img
-                            src="/aboutImg1.png"
+                            src="/cedar_roof_cleaning/simsan_fraser_main_cedar_roof_cleaning_1.webp"
                             alt="Roof cleaning in progress"
                             className="w-full max-w-md rounded-[36px] object-cover"
-                            style={{ height: '355px', minWidth: 200 }}
+                            style={{ height: '355px', minWidth: 200, filter: 'brightness(1.1)' }}
                         />
                     </Box>
                     {/* Right: Large Card with Approach Details */}
@@ -372,7 +372,7 @@ export default function AboutUsPage() {
                                 <VisionIcon />
                             </div>
                             <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
-                            <p className="text-muted-foreground leading-relaxed">
+                            <p className="leading-relaxed" style={{ color: '#212121' }}>
                                 Our mission is to deliver reliable, high-quality property maintenance and cleaning services that enhance the safety, appearance, and value of every home and business we work on. We aim to make property care simple and stress-free by providing honest communication, professional workmanship, and dependable results our clients can trust.
                             </p>
                         </div>
@@ -383,7 +383,7 @@ export default function AboutUsPage() {
                                 <MissionIcon />
                             </div>
                             <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
-                            <p className="text-muted-foreground leading-relaxed">
+                            <p className="leading-relaxed" style={{ color: '#212121' }}>
                                 Our mission is to deliver reliable, high-quality property maintenance and cleaning services that enhance the safety, appearance, and value of every home and business we work on. We aim to make property care simple and stress-free by providing honest communication, professional workmanship, and dependable results our clients can trust.
                             </p>
                         </div>

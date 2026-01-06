@@ -14,3 +14,9 @@ export const CONTACT_INFO = {
   PHONE: "+1-604-880-4476 | +1-778-222-7988",
 } as const;
 
+export const SOCIAL_MEDIA = {
+  FACEBOOK: "https://www.facebook.com/profile.php?id=100083323653516",
+  INSTAGRAM: "https://www.instagram.com/simsanfrasermaintenanceltd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+  WHATSAPP: "https://wa.me/17782227988",
+} as const;
+
